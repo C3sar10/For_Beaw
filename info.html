@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <script src="script2.js" defer></script>
+    <title>Beaw2</title>
+</head>
+<body>
+    <div class="full-screen-container">
+        <h1 class="title">Happy National Girlfriend's Day!!!</h1>
+        <div class="line"></div>
+        <ul class="tabs">
+            <li data-tab-target="#Option-1" class="tab">#Option 1</li>
+            <li data-tab-target="#home" class="active tab">Home</li>
+            <li data-tab-target="#Option-2" class="tab">#Option 2</li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="Option-1" data-tab-content>
+                <h1>#Option 1</h1>
+                <button id="showButton">Show Letter</button>
+                <div id="textContainer" class="hidden">
+                    <div class="title-tab">From me to You</div>
+                    <p>The day we met was one of the best days of my life. I remember how driving up to San Diego I was thinking very profoundly about what to expect at the orientation. I think my biggest goal was just to talk to someone, make at least one connection before the day was over and I would leave. I think the first hour or two was very boring as I got there sat by myself and just listened to all the introductions and I thought I was going to have such a bad time. The came the groups, this is where I had some hope about possibly being able to talk to someone and actually fill my goal. As the group kept piling in I didn't really seem to feel that I would have a good time talking to anyone, that is until you walked into the group. I remember seeing you walk to the group with your frizzy hair, your big violet/purple sweater, and your warm smile that seemed to give off such a welcoming and friendly vibe in the room. I knew that if there was one person I was going to talk to in that whole group it was you without a doubt. I know I've told you it was a coincidence that I ended up walking next to you during the tour, but as you know it was a lie, (tehee). That was only part one of the plan, but the next part wouldn't be as easy because I had no clue what to say to you because I was defintiely shy to even approach you at first. When you spoke out loud about how big the campus was I was honestly shocked because you had the courage to do what I was trying so hard to come out with. Honestly I remember keeping up an entire conversation with you after that because truth was I found that I was really enjoying talking to you because you were a great listener and an even better yapper haha. I think when the tour ended and we either went on a dinner break I was a little sad that I had lost you because I honestly thought I probably wouldn't have seen you again. Boy was I glad that even though I was such a shy person, that when we came back from dinner and I saw you sitting down that I actually made myself ask to sit down next to you because I was not missing this opportunity to make a new friend. To this day the fact that you asked me for my instagram right before I asked for your's was a complete anomaly for me and I have to give you credit where credit is due because that was bold. I remember telling myself not to message you until a day or two after because I didn't want to be weird haha, plus I needed a reason to even text you so I waited until I had my class schedule to hit up them dm's. One of my only regret's during all this time together was not going to the water polo game you had invited me too, I was still in my hometown feeling the fomo, plus a pretty girl asked me to hangout and I couldnt? There was something definitely wrong with me ahah. Perhaps things happen as they should have, because I remember that first day of class we had together on that Friday, in between classes we sat down outside of price and we talked for the whole two hours. What I remember so clearly was that intense eye contact that you had that made me feel so shy because your eyes were so beautiiful and they seemed to be looking straight through me looking into my soul. Also the quick wit you had with all your clever jokes and persistent sass made my day because it was the first time in a good while where I died from laughter. In the next couple of weeks I knew I was starting to develop feelings for you because in time I realized how I would always go to class in a good mood because I would get to see you as crazy as that sounds. You often made my day, I even started picking up some of your good habits like going to office hours, (never in my life had I gone to any office hours that's how I know I was cooked). Honestly, you made the transition from comunity college to University so much easier than it would have been, I feel like I would have been a lot more lost and helpless without you. The reason that I felt like writing this so called "letter" was because, even though I know you know this story, I want you to hear it from my point of view. You really became a best friend to me in that short of a time, to the point where I felt safe being able to talk to you about myself and feelings I hadn't shared with anyone. I know I can't give you much in the form of something physical, I still wanted you to know that your special. If this seems dumb I am sorry but I thought this would be a good way to show you that, as two nerdy Math-CS majors in love. If your still reading this all the way to the end then I commend you because I don't even know how I wrote this much lmaooo. Happy National Girlfriend's day my beaw, you are the best girlfriend and bestfriend I could ask for, I love you and I promise to do a better job next time, from your Beaw.</p>
+                </div>
+            </div>
+            <div id="home" data-tab-content class="active">
+                <h1>Instructions</h1>
+                <p>Here you have one of two choices to pick that will decide your fate. Click on either #Option 1 or on #Option 2 next to the highlighted Home tab. #Option 1 is a letter written to you from me, it's contents are unknown unless you open it. #Option 2 is a little Beaw trivia game I made, 10 questions all about your one and only Beaw. Judging on how well you do, there are prizes you can win but there is no cheating or restarting, it is a one and done deal honesty is greatly appreciated. Be careful, you can only choose one option so choose wisely, (or choose both there are no rules here ; ) Once you are done with either choice then you are free to go enjoy the rest of your day. I love you beaw!!! </p>
+            </div>
+            <div id="Option-2" data-tab-content>
+                <h1>#Option 2</h1>
+                <div class="title-tab">🐻Welcome to Beaw Trivia!!!🐻</div>
+                <button id="startGame" class="surprise">Start Game</button>
+                <div id="questionContainer" class="hidden">
+                    <p id="questionText"></p>
+                    <div id="answersContainer">
+                        <button class="answerButton" data-answer="0"></button>
+                        <button class="answerButton" data-answer="1"></button>
+                        <button class="answerButton" data-answer="2"></button>
+                        <button class="answerButton" data-answer="3"></button>
+                    </div>
+                <p id="scoreText"></p>
+                <p id="prizeText"></p>
+            </div>
+        </div>
+    </div>
+        <button class="surprise" id="goBack">Back to Previous Page</button>
+    </div>
+</body>
+</html>

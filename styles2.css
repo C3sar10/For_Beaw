@@ -1,0 +1,153 @@
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+body {
+    font-size: 1rem;
+    font-weight: bold;
+    background-image: linear-gradient(to right, hsl(308, 65%, 76%), hsl(0, 48%, 58%));
+    padding: 0;
+    margin: 0;
+}
+
+.full-screen-container {
+    height: 300vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.title {
+    margin-top: 0;
+    font-family: 'Bubblegum Sans';
+    font-size: 10vw;
+    margin-bottom: 0;
+}
+
+.line {
+    margin-top: 0;
+    border-top: 5px solid black;
+    width: 70vw;
+    margin-bottom: 1em;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
+.tab.active {
+    background-color: hsla(299, 60%, 82%, 0.5);
+}
+
+.tab:hover {
+    background-color: hsla(300, 33%, 92%, 0.5);
+}
+
+.tab-content {
+    margin-top: 10px;
+    width: 50vw;
+    height: auto;
+    background-color: rgb(255, 211, 134, 0.3);
+    border: none;
+    border-radius: 10px;
+    font-family: cursive;
+    padding-bottom: 10px;
+}    
+
+.surprise, #showButton{
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5vw;
+    padding: 10px 20px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.surprise:hover, #showButton:hover {
+    transform: scale(1.2);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Container styles */
+#textContainer {
+    width: 80%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow-y: auto;
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly off-screen */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-tab {
+    font-size: 2vw;
+}
+
+/* Animation when container is visible */
+#textContainer.show {
+    display: flex; /* Make the container block-level */
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+    height: auto;
+    margin-left: 4vw;
+}
+
+#showButton {
+    margin-top: 0;
+}
+
+#questionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .answerButton {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  #scoreText {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+
+  #prizeText {
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+
